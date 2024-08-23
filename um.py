@@ -7,9 +7,9 @@ def main():
 
 
 def count(s):
+    s= s.lower()
     count=0
-    matches= re.findall(r"\bum\b", s)
-    print(matches)
+    matches = re.findall(r'\bum\b[.,]?', s)
     for _ in matches:
         count+=1
     return count
